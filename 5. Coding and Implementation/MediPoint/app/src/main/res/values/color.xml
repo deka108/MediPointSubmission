@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_bg">#669900</color>
+    <color name="activity_bg">#41000000</color>
+
+    <color name="frame">#c8000000</color>
+
+    <color name="button_font_color">#ffffff</color>
+
+    <color name="tab_color">#ffebebeb</color>
+</resources>

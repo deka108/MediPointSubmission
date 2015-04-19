@@ -1,0 +1,84 @@
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/LinearLayoutStyle"
+        android:orientation= "vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Referred By"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp">
+
+            <!--list of countries -->
+            <TextView
+                android:id="@+id/LabelSelectCountry"
+                android:text="@string/select_country"
+                android:layout_marginTop="15dp"
+                style="@style/TextviewLayout"/>
+
+            <Spinner
+                android:id="@+id/CreateApptCountries"
+                style="@style/MySpinner"/>
+
+            <!--list of clinics-->
+            <TextView
+                android:id="@+id/LabelSelectLocation"
+                android:text="@string/select_location"
+                style="@style/TextviewLayout"/>
+
+            <Spinner
+                android:id="@+id/CreateApptLocations"
+                style="@style/MySpinner"/>
+
+            <!-- list of specialities-->
+            <TextView
+                android:id="@+id/LabelSelectSpecialty"
+                android:text="@string/select_specialty"
+                style="@style/TextviewLayout"/>
+
+            <Spinner
+                android:id="@+id/CreateApptSpecialty"
+                style="@style/MySpinner"/>
+
+            <!-- list of doctors-->
+            <TextView
+                android:id="@+id/LabelSelectDoctor"
+                android:text="@string/select_doctor"
+                style="@style/TextviewLayout"/>
+
+            <Spinner
+                android:id="@+id/CreateApptDoctors"
+                style="@style/MySpinner"/>
+
+            <TextView
+                android:text="Please Proceed to Appointment Booking"
+                android:layout_gravity="center"
+                style="@style/TextviewLayout"/>
+
+            <Button
+                android:id="@+id/sign_up1_right"
+                android:text="@string/next"
+                style="@style/ButtonStyle"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="goto_appointment" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

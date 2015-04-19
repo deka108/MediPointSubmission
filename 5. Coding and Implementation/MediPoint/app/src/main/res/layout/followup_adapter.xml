@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    >
+    <!-- Icons -->
+    <ImageView
+        android:id="@+id/followup_icon"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icontp_medipoint"
+        android:layout_margin="2dp"
+        android:layout_alignBottom="@+id/followup_time" />
+
+    <TextView
+        android:text="Wisdom Tooth Extraction"
+        android:singleLine="true"
+        android:id="@+id/followup_service"
+        android:textSize="18sp"
+        android:layout_margin="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/followup_icon"
+        />
+    <TextView
+        android:text="Monday, 10 Jun 2015"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/followup_service"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/followup_icon"
+        android:id="@+id/followup_date"/>
+    <TextView
+        android:text="10:30 - 11:30"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/followup_date"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/followup_icon"
+        android:id="@+id/followup_time"/>
+
+</RelativeLayout>
+

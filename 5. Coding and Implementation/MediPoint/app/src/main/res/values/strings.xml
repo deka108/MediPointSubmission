@@ -1,0 +1,142 @@
+<resources>
+    <!-- Action Bar resources -->
+    <string name="app_name">MediPoint</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="title_activity_password_retriever">Password Retriever</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="title_activity_edit_appointment">Edit Appointment</string>
+    <string name="title_activity_create_appointment">Create Appointment</string>
+    <string name="med_his">Medical History</string>
+    <string name="referral">Referral</string>
+
+    <!-- Moving my files from appointment.xml-->
+    <string name="selectspecialty">Select Speciality</string>
+    <string name="selectservice">Select Service</string>
+    <string name="selectdoctor">Select Doctor</string>
+    <string name="selectlocation">Select Location</string>
+    <string name="selecttime">Select Time</string>
+    <string name="selectdate">Select Date</string>
+    <string name="setdate">Set Date</string>
+    <string name="settime">Set Time</string>
+    <string name="labelspecialty">Specialty</string>
+    <string name="labelservice">Service</string>
+    <string name="labellocation">Location</string>
+    <string name="labeldoctor">Doctor</string>
+    <string name="labeltime">Time</string>
+    <string name="labeldate">Date</string>
+    <string name="labelnotes">Notes</string>
+    <string name="createappointment">Create new appointment</string>
+    <string name="editappointment">Edit appointment</string>
+    <string name="back_to_Home">Back</string>
+
+    <!-- Create, Edit appointment resources -->
+    <string name="select_specialty">Select Specialty</string>
+    <string name="select_service"  >Select Service</string>
+    <string name="select_doctor"   >Select Doctor</string>
+    <string name="select_location" >Select Clinic Location</string>
+    <string name="select_country"  >Select Country</string>
+    <string name="select_time"     >Select Time</string>
+    <string name="select_date"     >Select Date</string>
+    <string-array name="specialty">
+        <item>Ears, Nose, and Throat(ENT)</item>
+        <item>Dental</item>
+        <item>Women Health</item>
+        <item>General Medicine</item>
+    </string-array>
+
+    <string name="time1">09.00 - 09.30</string>
+    <string name="time2">09.30 - 10.00</string>
+    <string name="time3">10.00 - 10.30</string>
+    <string name="time4">10.30 - 11.00</string>
+    <string name="time5">11.00 - 11.30</string>
+    <string name="time6">11.30 - 12.00</string>
+    <string name="time7">12.00 - 12.30</string>
+    <string name="time8">12.30 - 13.00</string>
+    <string name="time9">13.00 - 13.30</string>
+    <string name="time10">13.30 - 14.00</string>
+    <string name="time11">14.00 - 14.30</string>
+    <string name="time12">14.30 - 15.00</string>
+    <string name="time13">15.00 - 15.30</string>
+    <string name="time14">15.30 - 16.00</string>
+    <string name="time15">16.00 - 16.30</string>
+    <string name="time16">16.30 - 17.00</string>
+    <string name="time17">17.00 - 17.30</string>
+    <string name="time18">17.30 - 18.00</string>
+    <string name="time19">18.00 - 18.30</string>
+    <string name="time20">18.30 - 19.30</string>
+    <string name="time21">19.30 - 20.00</string>
+    <string name="time22">20.00 - 20.30</string>
+    <string name="time23">20.30 - 21.00</string>
+
+    <string-array name="countries">
+        <item>Singapore</item>
+        <item>Malaysia</item>
+        <item>Thailand</item>
+    </string-array>
+
+    <string-array name="sign_up1">
+        <item>name</item>
+        <item>NRIC</item>
+        <item>e-mail</item>
+        <item>contact no.</item>
+        <item>address</item>
+    </string-array>
+
+
+    <!-- Button Label -->
+    <string name="create_appointment">create appointment</string>
+    <string name="edit_appointment">edit appointment</string>
+    <string name="create_account">create account</string>
+    <string name="confirm">confirm</string>
+    <string name="cancel">cancel</string>
+    <string name="edit">edit</string>
+    <string name="delete">delete</string>
+    <string name="next">next</string>
+    <string name="prev">prev</string>
+    <string name="submit">Submit</string>
+    <string name="set">set</string>
+
+    <!-- Medical History Resources -->
+    <string name="dental_1">Bleeding Gums</string>
+    <string name="dental_2">Had Braces Treatment</string>
+    <string name="dental_3">Teeth Sensitive to Hot, Cold </string>
+    <string name="dental_4">Earaches or Neck Pains</string>
+
+    <string name="ent_1">Hearing Problems</string>
+    <string name="ent_2">Ear Infection</string>
+    <string name="ent_3">Nose Bleeding</string>
+
+    <string name="gen_1">Blood in Urine</string>
+    <string name="gen_2">Hernia</string>
+    <string name="gen_3">Sexually Transmitted Infections</string>
+    <string name="gen_4">Menstrual Period Problems (females only)</string>
+
+    <string name="others_1">High Blood Pressure</string>
+    <string name="others_2">Diabetes</string>
+    <string name="others_3">Gastric Problems</string>
+    <string name="others_4">Heart Diseases</string>
+
+    <string name="drug_1">Local Anesthetics</string>
+    <string name="drug_2">Aspirin</string>
+    <string name="drug_3">Penicillin or other Antibiotics</string>
+    <string name="drug_4">Sulfa Drugs</string>
+    <string name="drug_5">Any Other</string>
+    <string name="title_activity_database_tester">DatabaseTester</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="create_new">Create New</string>
+
+    <string-array name="create_new">
+        <item>Create New</item>
+        <item>Appointment</item>
+        <item>Referral</item>
+        <item>Follow Up</item>
+    </string-array>
+    <string name="title_activity_create_follow_up">CreateFollowUpActivity</string>
+    <string name="title_activity_follow_up_list">FollowUpListActivity</string>
+    <string name="title_activity_follow_up">FollowUpActivity</string>
+
+
+</resources>

@@ -1,0 +1,124 @@
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/LinearLayoutStyle"
+        android:orientation="vertical"
+        tools:context=".EditAppointmentActivity">
+
+        <!-- select country -->
+        <TextView
+            android:id="@id/LabelSelectCountry"
+            android:layout_marginTop="10dp"
+            android:text="@string/select_country"
+            style="@style/TextviewLayout"/>
+
+        <Spinner
+            android:id="@+id/EditApptCountries"
+            style="@style/MySpinner"/>
+
+
+        <!--select location -->
+        <TextView
+            android:id="@+id/LabelSelectLocation"
+            android:text="@string/select_location"
+            style="@style/TextviewLayout"/>
+
+        <Spinner
+            android:id="@+id/EditApptLocations"
+            style="@style/MySpinner"/>
+
+        <!-- select specialty -->
+        <TextView
+            android:id="@+id/edit_specialty"
+            android:text="@string/select_specialty"
+            style="@style/TextviewLayout"/>
+
+        <Spinner
+            android:id="@+id/EditApptSpecialty"
+            style="@style/MySpinner"/>
+
+        <!-- select type -->
+        <TextView
+            android:id="@+id/edit_type"
+            android:text="@string/select_service"
+            style="@style/TextviewLayout"/>
+
+        <Spinner
+            android:id="@+id/EditApptType"
+            style="@style/MySpinner"/>
+
+        <!--select doctor -->
+        <TextView
+            android:id="@+id/edit_doctor"
+            android:text="@string/select_doctor"
+            style="@style/TextviewLayout"/>
+
+        <Spinner
+            android:id="@+id/EditApptDoctors"
+            style="@style/MySpinner"/>
+
+
+        <!-- Date -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+            <TextView
+                android:id="@+id/LabelChooseDate"
+                android:text="@string/select_date"
+                android:layout_width="match_parent"
+                style="@style/TextviewLayout"
+                android:layout_weight="1"/>
+
+            <Button
+                style="@style/FragmentStyle"
+                android:text="TAP TO CHOOSE DATE"
+                android:id="@+id/datepicker"
+                android:onClick="onDateButtonSelected"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!-- Time -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/LabelAppointmentTime"
+                android:text="@string/select_time"
+                android:layout_width="match_parent"
+                style="@style/TextviewLayout"
+                android:layout_weight="1"/>
+
+
+            <Button
+                style="@style/FragmentStyle"
+                android:text="TAP TO CHOOSE TIME"
+                android:id="@+id/timepickeredit"
+                android:onClick="onTimeButtonSelected"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ConfirmEditAppt"
+            android:text="@string/confirm"
+            style="@style/ButtonStyle"
+            android:layout_marginBottom="5dp"
+            android:onClick="onConfirmEdit"/>
+
+        <Button
+            android:id="@+id/CancelEditAppt"
+            android:text="@string/cancel"
+            style="@style/ButtonStyle"
+            android:layout_marginBottom="16dp"
+            android:onClick="onCancelEdit"/>
+
+    </LinearLayout>
+</ScrollView>

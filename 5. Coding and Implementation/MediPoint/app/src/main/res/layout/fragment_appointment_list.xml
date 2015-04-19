@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    tools:context=".MainActivity">
+
+
+    <Spinner
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/buttonSpinner"
+        android:spinnerMode="dialog"
+        style="@style/buttonSpinnerStyle"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:text="No Appointment Available."
+        android:id="@+id/noAppointmentText"
+        android:visibility="gone"
+        />
+
+    <ListView
+        android:id="@+id/customListView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbarStyle="outsideInset"
+        >
+
+    </ListView>
+
+
+</LinearLayout>

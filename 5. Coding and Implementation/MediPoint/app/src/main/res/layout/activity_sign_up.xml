@@ -1,0 +1,56 @@
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="false"
+    tools:context=".SignUpPageOne">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.mycompany.cz2006.SignUp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:id="@+id/sign_up_1"
+        style="@style/LinearLayoutStyle">
+
+    <EditText
+        android:id="@+id/NameTextbox"
+        android:hint="Name"
+        android:layout_marginTop="20dp"
+        style="@style/EditTextStyle" />
+
+
+    <EditText
+        android:id="@+id/NRICTextbox"
+        android:hint="NRIC"
+        style="@style/EditTextStyle"/>
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:id="@+id/EmailTextbox"
+        android:hint="E-mail"
+        style="@style/EditTextStyle"/>
+
+    <EditText
+        android:inputType="phone"
+        android:id="@+id/ContactTextbox"
+        android:hint="Contact No."
+        style="@style/EditTextStyle"/>
+
+    <EditText
+        android:inputType="textPostalAddress"
+        android:id="@+id/AddressTextbox"
+        android:hint="Address"
+        style="@style/EditTextStyle"/>
+
+    <Button
+        android:id="@+id/sign_up1_right"
+        android:text="@string/next"
+        style="@style/ButtonStyle"
+        android:layout_marginBottom="16dp"
+        android:onClick="goToNext" />
+
+
+</LinearLayout>
+</ScrollView>

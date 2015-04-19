@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:text="No Appointment Available."
+        android:id="@+id/noPastAppoinment"
+        android:visibility="gone"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Please select an appointment below for the follow up."
+        style="@style/TextviewLayout"
+        />
+    <ListView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/followuplist"
+        android:scrollbarStyle="outsideInset"
+        >
+
+    </ListView>
+
+</LinearLayout>

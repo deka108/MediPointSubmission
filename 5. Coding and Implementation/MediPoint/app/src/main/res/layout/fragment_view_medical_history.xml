@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        style="@style/LinearLayoutStyle"
+        android:paddingTop="0dp">
+
+        <TextView
+            style="@style/TextviewLayout"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Personal Information"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- name -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TextviewLayout"
+                android:paddingLeft="10dp"
+                android:layout_width="fill_parent"
+                android:text="Name"
+                android:layout_weight="1"/>
+            <TextView
+                style="@style/TextviewLayout"
+                android:id="@+id/patientName"
+                android:layout_width="fill_parent"
+                android:text="Sample Name"
+                android:layout_weight="1"
+                android:textAllCaps="true"/>
+
+        </LinearLayout>
+
+        <!-- age -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TextviewLayout"
+                android:paddingLeft="10dp"
+                android:layout_width="fill_parent"
+                android:text="Age"
+                android:layout_weight="1"/>
+            <TextView
+                style="@style/TextviewLayout"
+                android:layout_width="fill_parent"
+                android:id="@+id/patientAge"
+                android:text="Sample Age"
+                android:textAllCaps="true"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <!-- gender -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                style="@style/TextviewLayout"
+                android:paddingLeft="10dp"
+                android:layout_width="fill_parent"
+                android:text="Gender"
+                android:layout_weight="1"/>
+            <TextView
+                style="@style/TextviewLayout"
+                android:id="@+id/patientGender"
+                android:layout_width="fill_parent"
+                android:text="Sample Gender"
+                android:textAllCaps="true"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <!-- personal medical history -->
+        <TextView
+            style="@style/TextviewLayout"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Medical History"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            style="@style/TextviewLayout"
+            android:id="@+id/medicalHistory"
+            android:paddingLeft="10dp"
+            android:text="sample history here"/>
+
+        <!-- drug allergy -->
+        <TextView
+            style="@style/TextviewLayout"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Drug Allergy"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            style="@style/TextviewLayout"
+            android:id="@+id/allergy"
+            android:paddingLeft="10dp"
+            android:text="sample allergy here"/>
+
+        <!-- ongoing treatment -->
+        <TextView
+            style="@style/TextviewLayout"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Ongoing Treatment"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            style="@style/TextviewLayout"
+            android:id="@+id/ongoingTreatment"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="sample ongoing treatment here"/>
+
+        <!-- ongoing medication -->
+        <TextView
+            style="@style/TextviewLayout"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Ongoing Medication"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            style="@style/TextviewLayout"
+            android:id="@+id/ongoingMedication"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="sample ongoing medication here"/>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:id="@+id/editHistory"
+            android:text="@string/edit"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

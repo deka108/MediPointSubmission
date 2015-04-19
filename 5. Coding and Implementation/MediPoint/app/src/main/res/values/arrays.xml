@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="createApptmt">
+        <item>New Appointment</item>
+        <item>New Referral</item>
+        <item>New Follow Up</item>
+    </string-array>
+</resources>

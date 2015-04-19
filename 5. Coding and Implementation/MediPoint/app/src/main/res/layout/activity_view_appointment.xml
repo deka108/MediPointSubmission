@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        style="@style/LinearLayoutStyle"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical">
+
+        <!--Section 1 - Main Appointment Details -->
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <!-- Specialty icon -->
+            <ImageView
+                android:id="@+id/specialty_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icontp_medipoint"
+                android:layout_alignBottom="@+id/viewSpecialty"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignTop="@+id/viewService" />
+
+            <!-- Service (Kind of appointment) -->
+            <TextView
+                android:id="@+id/viewService"
+                android:text="Regular Check-up"
+                android:textSize="18sp"
+                android:layout_margin="2dp"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/specialty_icon">
+            </TextView>
+
+            <!-- Appointment Status -->
+            <TextView
+                android:id="@+id/viewStatus"
+                android:text="Ongoing"
+                android:textAllCaps="true"
+                style="@style/TextviewLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewService"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/specialty_icon">
+            </TextView>
+
+            <!-- Specialty -->
+            <TextView
+                android:id="@+id/viewSpecialty"
+                android:text="Women's Health Services"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewStatus"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/specialty_icon">
+            </TextView>
+
+        </RelativeLayout>
+        <!-- End of section 1 -->
+
+        <!--Section 2 - IMPORTANT Appointment Details -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal">
+
+            <!--Label for appointment details-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/LabelAppointmentDetails"
+                    android:text="Appointment Details"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"/>
+
+            <!-- Calendar -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:id="@+id/date_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/calendar"
+                    android:layout_margin="2dp"/>
+                <TextView
+                    android:id="@+id/viewDate"
+                    android:text="01 April 2015"
+                    style="@style/TextviewLayout"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical">
+                </TextView>
+            </LinearLayout>
+
+            <!-- Time -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+                <ImageView
+                    android:id="@+id/time_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/clock"
+                    android:layout_margin="2dp"
+                    />
+                <TextView
+                    android:id="@+id/viewTime"
+                    android:text="10.00 - 10.30"
+                    style="@style/TextviewLayout"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical">
+                </TextView>
+            </LinearLayout>
+
+            <!-- Clinic -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:id="@+id/clinic_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/clinic"
+                    android:layout_margin="2dp"/>
+                <TextView
+                    android:id="@+id/viewLocation"
+                    android:text="DJZASS Health Care Center"
+                    style="@style/TextviewLayout"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical">
+                </TextView>
+            </LinearLayout>
+
+            <!-- Doctor -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:id="@+id/doctor_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/doctor"
+                    android:layout_margin="2dp" />
+                <TextView
+                    android:id="@+id/viewDoctor"
+                    android:text="Dr. Auliya"
+                    style="@style/TextviewLayout"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- End of section 2 -->
+
+        <!-- Section 3 - Pre Appointment Actions -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_margin="10dp">
+                <TextView
+                    android:id="@+id/LabelAppointmentPreAppointmentActions"
+                    android:text="Pre Appointment Actions"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"/>
+            <TextView
+                android:id="@+id/viewPreAppointmentActions"
+                android:text="None"
+                android:layout_width="match_parent"
+                style="@style/TextviewLayout"
+                android:layout_margin="10dp"
+                android:gravity="left">
+            </TextView>
+        </LinearLayout>
+        <!-- End of section 3 -->
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/ViewApptEdit"
+            android:layout_marginBottom="5dp"
+            android:text="@string/edit"
+            android:onClick="ViewApptEdit"
+            style="@style/ButtonStyle"/>
+
+        <Button android:id="@+id/ViewApptDelete"
+            style="@style/ButtonStyle"
+            android:text="@string/delete"
+            android:onClick="ViewApptDelete"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>
+
